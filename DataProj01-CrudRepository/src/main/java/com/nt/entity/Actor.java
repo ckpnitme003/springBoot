@@ -1,0 +1,32 @@
+package com.nt.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.NonNull;
+import lombok.RequiredArgsConstructor;
+
+@Entity
+@Table(name = "DataJPA_Actor")
+@Data
+@RequiredArgsConstructor
+@NoArgsConstructor
+@AllArgsConstructor
+public class Actor {
+	@Id
+	@GeneratedValue(strategy = GenerationType.SEQUENCE)
+//	@GeneratedValue(strategy = GenerationType.AUTO)
+	private Integer aid;
+	@NonNull
+	private String aname;
+	@NonNull
+	private String category;
+	@NonNull
+	private Long mobile;
+}
