@@ -1,0 +1,48 @@
+spring:
+  profiles:
+    active: prod
+
+---
+spring:
+  profiles: dev
+ 
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: system
+    password: ckp
+    
+    type: org.apache.commons.dbcp2.BasicDataSource
+    
+---
+spring:
+  profiles: test
+  
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: system
+    password: ckp
+    type: org.apache.tomcat.jdbc.pool.DataSource
+    
+---
+spring:
+  profiles: uat
+  
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: system
+    password: ckp
+    type: oracle.ucp.jdbc.PoolDataSourceImpl
+  
+---
+spring:
+  profiles: prod
+  
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: system
+    password: ckp
+  

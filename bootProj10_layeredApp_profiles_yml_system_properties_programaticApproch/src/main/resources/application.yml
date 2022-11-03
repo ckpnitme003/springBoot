@@ -1,0 +1,8 @@
+#spring:
+#  profiles:
+#    active: stagging
+    
+    
+spring:
+  profiles:
+    include: dev

@@ -1,0 +1,31 @@
+org:
+ nit:
+  #simple properties
+  eid: 101
+  ename: chandan
+  #arrays properties
+  favColors: 
+    - orange
+    - white
+    - green
+  #List properties
+  nick-Names:
+    - china1
+    - chandu1
+    - chanda1
+# (or)
+  nickNames: [china,chanda,chandu]
+  #Set properties
+  phoneNos:
+    - 9982928219
+    - 8882929293
+    - 7783739299
+  #Map properties
+  idDetails:
+    aadharid: 856012029919
+    voterid: cvz0000120203
+  #Has-A properties
+  company:
+    cid: 123
+    cname: HCL
+    caddrs: hyd     
