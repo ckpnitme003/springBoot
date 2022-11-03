@@ -1,0 +1,6 @@
+name=hk
+address=hyd
+mobile=8229927299
+
+‪E:\store\new_img.jpg
+‪E:\store\hk_Resume_Test.txt
